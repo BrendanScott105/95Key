@@ -53,7 +53,7 @@ while(len(keys) != num):
 	keyappend += Part4D
 	keyappend += Part4A
 	keys.append(keyappend)
-	if(Part3A[5] == 8 or Part3A[5] == 9 or Part3A[5] == 0):
+	if(Part3A[5] == 8 or Part3A[5] == 9 or Part3A[5] == 0 or Part3A[5] < 0):
 		keys.pop()
 	print(keyappend, end='\r')
 	keyappend = ""
