@@ -5,7 +5,7 @@ args = parser.parse_args()
 keys = []
 keyappend = ""
 print("Working... ")
-while len(keys) != 10000:
+while len(keys) != 1000000:
 	Part1 = str(randint(1,366))
 	Part1A = 3 - len(Part1)
 	Part1B = [0]*Part1A
@@ -53,7 +53,9 @@ while len(keys) != 10000:
 	keys.append(keyappend)
 	if(Part3A[5] == 8 or Part3A[5] == 9 or Part3A[5] == 0):
 		keys.pop()
+	print(keyappend, end='\r')
 	keyappend = ""
+print("Done!                   ")
 with open('95Keys.txt', 'w') as filehandle:
 	for listitem in keys:
 		filehandle.write('%s\n' % listitem)
