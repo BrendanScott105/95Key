@@ -1,11 +1,13 @@
 import argparse
 from random import randint
 parser = argparse.ArgumentParser(description='Win95/NT4 OEM key generator')
+parser.add_argument('Number', type=int, help='# of keys')
 args = parser.parse_args()
+num = args.Number
 keys = []
 keyappend = ""
 print("Working... ")
-while len(keys) != 1000000:
+while(len(keys) != num):
 	Part1 = str(randint(1,366))
 	Part1A = 3 - len(Part1)
 	Part1B = [0]*Part1A
