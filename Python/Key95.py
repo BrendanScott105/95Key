@@ -21,7 +21,7 @@ while len(keys) != 10000:
 		Part2A = str(randint(95,99))
 		keyappend = keyappend + Part2A
 	if Part2PRQ == 1:
-		Part2B = "0" + str(randint(0,3))
+		Part2B = "0" + str(randint(0,2))
 		keyappend = keyappend + Part2B
 	keyappend += "-OEM-0"
 	Part3A = []
